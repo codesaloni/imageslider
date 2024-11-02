@@ -1,0 +1,96 @@
+/* css style for body */
+body {
+    background-image: url('https://www.tourmyindia.com/blog/wp-content/uploads/2014/02/Top-Things-to-Do-in-Jammu-and-Kashmir.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container-fluid {
+    background-color: rgba(0, 0, 0, 0.5); 
+    max-width: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+/* heading style */
+h2 {
+    font-size: 4vw;
+    color: white;
+    text-align: center;
+}
+
+/* Image style */
+.images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin: 20px auto;
+}
+
+/* Set image dimensions and fit */
+.images img {                        
+    width: 600px; 
+    height: 300px; 
+    object-fit: cover; 
+}
+
+/* Controls container styling */
+.slider-controls {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: white;
+    font-size: 50px;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+/* Control buttons */
+.slider-controls .prev,
+.slider-controls .next {
+    font-size: 60px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+}
+
+/* responsive code */
+.slider-controls .prev {
+    margin-left: 20px;
+}
+
+.slider-controls .next {
+    margin-right: 20px;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 6vw;
+    }
+
+    .images img {
+        width: 100%;
+        height: auto;
+    }
+
+    .slider-controls .prev,
+    .slider-controls .next {
+        font-size: 30px;
+        padding: 5px;
+    }
+}
+
